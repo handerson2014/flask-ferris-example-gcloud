@@ -6,12 +6,16 @@
 # TODO: Enter your application id below. If you have signed up
 # using cloud.google.com/console use the "project id" for your application
 # id.
+module: default
 runtime: python27
 api_version: 1
 threadsafe: yes
 vm: true
 
-instance_class: B1
+resources:
+  cpu: .5
+  memory_gb: 1.3
+
 manual_scaling:
   instances: 1
 
